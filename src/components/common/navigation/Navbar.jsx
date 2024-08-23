@@ -2,10 +2,11 @@ import { useState } from "react"
 import { sidebarContext } from "./navcontext"
 import Header from "./Header"
 import Sidebar from "./Sidebar"
+
 const Navbar = () => {
-    const [status, setStatus] = useState(false)
+    const [sidebarStatus, setSidebarStatus] = useState(false)
   return (
-    <sidebarContext.Provider value={[status, setStatus]}>
+    <sidebarContext.Provider value={[sidebarStatus, setSidebarStatus]}>
               <Header />
               <Sidebar />
     </sidebarContext.Provider>

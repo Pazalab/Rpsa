@@ -1,0 +1,39 @@
+.landing{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.hero-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.mySwiper{
+     height: 100%;
+}
+.hero-slide-moja.one{
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url("../assets/hero4.webp") no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+.hero-slide-moja.three{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url("../assets/hero3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+}
+
+.hero-slide-moja.two{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url("../assets/hero1.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+}
