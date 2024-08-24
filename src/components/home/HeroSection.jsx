@@ -1,11 +1,36 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-
+import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 // import required modules
-import { EffectCreative, Autoplay } from 'swiper/modules';
+import { EffectCreative, Autoplay, Pagination } from 'swiper/modules';
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { HiOutlineArrowLongLeft, HiOutlineArrowLongRight } from "react-icons/hi2";
+
+const hero_data = [
+      {
+           id: 1,
+           image: "one",
+           statement: "Crafting Innovative Architecture for Inspired Living.",
+           description: "We push design boundaries to craft spaces that inspire and enhance everyday living, from residential to commercial."
+      },
+      {
+        id: 2,
+        image: "two",
+        statement: "Where Vision Meets Precision, and Ideas Become Landmarks.",
+        description: "We turn visionary ideas into iconic structures with meticulous detail and a commitment to excellence."
+      },
+      {
+        id: 3,
+        image: "three",
+        statement: "Designing Timeless Spaces, Shaping Lasting Legacies",
+        description: "We blend classic design with innovation to create enduring spaces that enrich communities and stand the test of time."
+      }
+]
 const HeroSection = () => {
+  const [ swiperRef, setSwiperRef ] = useState(null)
   return (
     <div className="hero-section">
               <div className="hero-slider">
@@ -13,45 +38,74 @@ const HeroSection = () => {
                            slidesPerView={1}
                            loop={true}
                            speed={1000}
+                           effect={'creative'}
                            direction={'vertical'}
                            autoplay= {{
-                                delay: 3500,
+                                delay: 8500,
                                 disableOnInteraction: false
                           }}
                           creativeEffect={{
-                            prev: {
-                              shadow: true,
-                              translate: [0, 0, -400],
-                            },
-                            next: {
-                              translate: [0, "100%", 0],
-                            },
+                               prev: {
+                                      shadow: true,
+                                      translate: [0, "-20%", -1],
+                               },
+                              next: {
+                                     translate: [0, "100%", 0],
+                              },
+                          }}
+                          pagination = {{
+                              el: "#swiperBullets",
+                              type: "bullets",
+                              bulletClass: "swiper-custom-bullet",
+                              bulletActiveClass: "swiper-custom-bullet-active",
+                              clickable: true
+                          }}
+                          onSwiper={(swiper) => setSwiperRef(swiper) }
+                          onActiveIndexChange={(swiper) => {
+                                    console.log("Active index is", swiper.activeIndex)
                           }}
                           className="mySwiper"
-                           modules={[EffectCreative, Autoplay]}
+                           modules={[EffectCreative, Autoplay, Pagination]}
                        >
-                               <SwiperSlide>
-                                        <div className="hero-slide-moja one">
-                                              <div className="hero-slide-texts">
-                                               
-                                              </div>
-                                      </div>
-                               </SwiperSlide>
-                               <SwiperSlide>
-                                        <div className="hero-slide-moja two">
-                                              <div className="hero-slide-texts">
-                                               
-                                              </div>
-                                      </div>
-                               </SwiperSlide>
-                               <SwiperSlide>
-                                        <div className="hero-slide-moja three">
-                                              <div className="hero-slide-texts">
-                                               
-                                              </div>
-                                      </div>
-                               </SwiperSlide>
+                              { hero_data.map(slide => 
+                                  <SwiperSlide key={slide.id}>
+                                          { ({isActive}) => (
+                                                   <div className={`hero-slide-moja ${slide.image}`}>
+                                                             <div className="image-plus-overlay"></div>
+                                                             <div className={ isActive ? "hero-slide-texts active" : "hero-slide-texts"}>
+                                                                      <div className="inner-row">
+                                                                              <div className="hero-slide-inner-wrap">
+                                                                                           <h1>{slide.statement}</h1>
+                                                                                           <p>{slide.description}</p>
+                                                                              </div>
+                                                                              <div className="hero-social-links">
+                                                                                         <ul>
+                                                                                                  <li><Link to={"/"} target="_blank"><FaFacebookF /></Link></li>
+                                                                                                  <li><Link to={"/"} target="_blank"><FaXTwitter /></Link></li>
+                                                                                                  <li><Link to={"/"} target="_blank"><FaLinkedinIn /></Link></li>
+                                                                                         </ul>
+                                                                                 </div>
+                                                                   </div>
+                                                        </div>
+                                                </div>
+                                           )}
+                                 </SwiperSlide>
+                              )}
                        </Swiper>
+                       <div className="hero-activity-wrap">
+                              <div className="hero-activity-wrap-inner">
+                                        <div className="hero-activity-status">
+                                                   { hero_data.map(item => 
+                                                         <span className="active" key={item.id}></span>
+                                                   )}
+
+                                        </div>
+                                          <div className="hero-switches">
+                                                    <span className="swiper-button-prev"><HiOutlineArrowLongLeft /></span>
+                                                    <span className="swiper-button-next"><HiOutlineArrowLongRight /></span>
+                                          </div>
+                              </div>
+                      </div>
               </div>
     </div>
   )
