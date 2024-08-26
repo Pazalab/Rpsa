@@ -10,7 +10,6 @@ import gsap from "gsap";
 const Sidebar = () => {
   const [ sidebarStatus, setSidebarStatus ] = useContext(sidebarContext);
   const sidebarRef = useRef();
-  console.log(sidebarStatus)
   //close sidebar
   const closeSidebar = () => setSidebarStatus(false);
 

@@ -30,7 +30,10 @@ const hero_data = [
       }
 ]
 const HeroSection = () => {
-  const [ swiperRef, setSwiperRef ] = useState(null)
+  const [ swiperRef, setSwiperRef ] = useState(null);
+  const [swiperIndex, setSwiperIndex] = useState(0)
+
+  console.log(swiperRef)
   return (
     <div className="hero-section">
               <div className="hero-slider">
@@ -53,16 +56,9 @@ const HeroSection = () => {
                                      translate: [0, "100%", 0],
                               },
                           }}
-                          pagination = {{
-                              el: "#swiperBullets",
-                              type: "bullets",
-                              bulletClass: "swiper-custom-bullet",
-                              bulletActiveClass: "swiper-custom-bullet-active",
-                              clickable: true
-                          }}
-                          onSwiper={(swiper) => setSwiperRef(swiper) }
+                          onSwiper={(swiper) => setSwiperRef(swiper)}
                           onActiveIndexChange={(swiper) => {
-                                    console.log("Active index is", swiper.activeIndex)
+                                    setSwiperIndex(swiper.realIndex)
                           }}
                           className="mySwiper"
                            modules={[EffectCreative, Autoplay, Pagination]}
@@ -95,14 +91,13 @@ const HeroSection = () => {
                        <div className="hero-activity-wrap">
                               <div className="hero-activity-wrap-inner">
                                         <div className="hero-activity-status">
-                                                   { hero_data.map(item => 
-                                                         <span className="active" key={item.id}></span>
-                                                   )}
-
+                                                  <span onClick={() => swiperRef.slideTo(0)} className={swiperIndex == 0 ? "active" : ""}></span>
+                                                  <span onClick={() => swiperRef.slideTo(1)}  className={swiperIndex == 1 ? "active" : ""}></span>
+                                                  <span onClick={() => swiperRef.slideTo(2)}  className={swiperIndex == 2 ? "active" : ""}></span>
                                         </div>
                                           <div className="hero-switches">
-                                                    <span className="swiper-button-prev"><HiOutlineArrowLongLeft /></span>
-                                                    <span className="swiper-button-next"><HiOutlineArrowLongRight /></span>
+                                                    <span className="swiper-button-prev" onClick={() => swiperRef.slidePrev()}><HiOutlineArrowLongLeft /></span>
+                                                    <span className="swiper-button-next" onClick={() => swiperRef.slideNext()}><HiOutlineArrowLongRight /></span>
                                           </div>
                               </div>
                       </div>

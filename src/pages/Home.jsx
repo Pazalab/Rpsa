@@ -1,6 +1,8 @@
 import Navbar from "../components/common/navigation/Navbar"
 import HeroSection from "../components/home/HeroSection"
+import AboutSection from "../components/home/AboutSection"
 import "../styles/home.css"
+import AboutExtraSection from "../components/home/AboutExtraSection"
 const Home = () => {
   return (
     <>
@@ -8,6 +10,8 @@ const Home = () => {
                      <Navbar />
                      <HeroSection />
            </div>
+           <AboutSection />
+           <AboutExtraSection />
     </>
   )
 }
