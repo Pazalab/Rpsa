@@ -133,6 +133,7 @@
       -moz-transform: translateY(20px);
       -ms-transform: translateY(20px);
       -o-transform: translateY(20px);
+      font-weight: 600;
 }
 .hero-slide-texts.active h1{
       animation: slideUp 1.5s forwards;
@@ -306,14 +307,14 @@
      grid-template-columns: 3fr 1fr;
      gap: 50px;
 }
-.about-extra-section-content h3{
+.about-extra-section-content p{
      font-size: 25px;
-     font-weight: 500;
-     line-height: 1.75;
+     font-weight: 400;
+     line-height: 1.5;
      color: rgb(36, 36, 36);
 }
 
-.about-extra-section-content h3 span{
+.about-extra-section-content p span{
       font-weight: 600;
       font-size: 28px;
 }
@@ -334,7 +335,7 @@
       text-align: center;
 }
 .number-moja h2{
-      font-size: 80px;
+      font-size: 70px;
       margin-bottom: 10px;
       font-weight: 500;
 }
@@ -343,20 +344,99 @@
      font-weight: 500;
 }
 
+.services-section{
+      padding: 60px 0px  100px 0;
+}
 
+.services-intro{
+       width: 900px;
+       margin: auto;
+}
+.services-intro h2{
+     width: 80%;
+      font-size: 80px;
+      line-height: 1.3;
+}
+.services-intro-texts{
+     display: flex;
+     align-items: center;
+     gap: 80px;
+}
 
+.services-intro-texts p{
+      font-size: 18px;
+      line-height: 1.75;
+      color: rgb(50, 50, 50);
+}
 
+.services-body-row{
+       margin-top: 50px;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 30px;
+       row-gap: 50px;
+}
 
+.service-moja img{
+      width: 50px;
+      height: 50px;
+}
+.service-moja h3{
+     font-size: 25px;
+     margin: 10px 0;
+     font-weight: 500;
+     line-height: 1.34;
+}
+.service-moja p{
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgb(50, 50, 50);
+      margin-bottom: 20px;
+}
 
+.service-moja .link-wrap a{
+      width: 170px;
+      height: 45px;
+}
 
+.portfolio-section{
+       background: #111;
+       padding: 100px 0;
+}
 
+.portfolio-section-content{
+     display: grid;
+     grid-template-columns: 1.25fr 2fr;
+     gap: 80px;
+}
+.portfolio-intro-content{
+     color: whitesmoke;
+}
 
+.portfolio-intro-content h4{
+     font-size: 20px;
+     font-weight: 300;
+}
+.portfolio-intro-content h2{
+     font-size: 30px;
+     line-height: 1.5;
+     margin: 10px 0;
+     font-weight: 500;
+}
 
-
-
-
-
-
+.portfolio-intro-content .link-wrap{
+     margin-top: 30px;
+}
+.portfolio-intro-content .link-wrap a{
+     color: gainsboro;
+}
+.portfolio-intro-content .link-wrap a span.top-border,
+.portfolio-intro-content .link-wrap a span.right-border,
+.portfolio-intro-content .link-wrap a span.bottom-border,
+.portfolio-intro-content .link-wrap a span.left-border
+{
+      background-color: gainsboro;
+}
 
 @media(max-width: 1300px){
       .about-section-content .middle-part{

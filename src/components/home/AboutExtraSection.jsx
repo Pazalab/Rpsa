@@ -6,7 +6,7 @@ const AboutExtraSection = () => {
     <div className="about-extra-section">
                <div className="inner-row">
                        <div className="about-extra-section-content">
-                                   <h3><span>Renaissance per Salut Architects </span>is a Kenyan firm committed to excellence in Africa’s building industry. With 30+ years of combined experience, we deliver sustainable, cost-effective designs across residential, healthcare, commercial, and hospitality sectors. Our projects emphasize environmentally conscious solutions, using renewable energy, efficient systems, natural ventilation, and locally sourced materials to maximize value and comfort.</h3>
+                                   <p><span>Renaissance per Salut Architects </span>is a Kenyan architectural firm committed to excellence in Africa’s building industry. With 30+ years of combined experience, we deliver sustainable, cost-effective designs across residential, healthcare, commercial, and hospitality sectors. Our projects emphasize environmentally conscious solutions, using renewable energy, efficient systems, natural ventilation, and locally sourced materials to maximize value and comfort.</p>
                                     
                                  <div className="link-wrap">
                                           <Link to={"/"}>
