@@ -411,6 +411,8 @@
 }
 .portfolio-intro-content{
      color: whitesmoke;
+     position: sticky;
+     top: 100px;
 }
 
 .portfolio-intro-content h4{
@@ -437,6 +439,205 @@
 {
       background-color: gainsboro;
 }
+
+.portfolio-project-moja{
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      margin-bottom: 30px;
+}
+.portfolio-project-moja img{
+      display: block;
+}
+.portfolio-project-moja .pt-texts{
+     position: absolute;
+     left: 5%;
+     bottom: 5%;
+     width: 100%;
+}
+.pt-texts h3{
+     background: white;
+     width: 50%;
+     padding: 10px 20px;
+     font-weight: 500;
+     font-size: 30px;
+     display: flex;
+     justify-content: space-between;
+     transform: translateY(40px);
+     -webkit-transform: translateY(40px);
+     -moz-transform: translateY(40px);
+     -ms-transform: translateY(40px);
+     -o-transform: translateY(40px);
+     transition: all 0.75s ease;
+     -webkit-transition: all 0.75s ease;
+     -moz-transition: all 0.75s ease;
+     -ms-transition: all 0.75s ease;
+     -o-transition: all 0.75s ease;
+}
+.pt-texts h3 span{
+     display: flex;
+}
+
+.pt-texts a{
+     display: flex;
+     padding: 10px;
+     color: black;
+     align-items: center;
+     gap: 5px;
+     width: 240px;
+     background-color: white;
+     margin: 10px 0;
+     font-weight: 500;
+     transform: translateY(40px);
+     -webkit-transform: translateY(40px);
+     -moz-transform: translateY(40px);
+     -ms-transform: translateY(40px);
+     -o-transform: translateY(40px);
+     transition: all 0.75s ease;
+     -webkit-transition: all 0.75s ease;
+     -moz-transition: all 0.75s ease;
+     -ms-transition: all 0.75s ease;
+     -o-transition: all 0.75s ease;
+     opacity: 0;
+}
+.pt-texts a:hover{
+     gap: 10px;
+}
+.pt-texts a span{
+     display: flex;
+     margin-top: 3px;
+}
+.portfolio-project-moja:hover .pt-texts h3{
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      color: var(--main-color);
+}
+.portfolio-project-moja:hover .pt-texts a{
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+       -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+       opacity: 1;
+}
+
+.testimonials-section{
+       padding: 100px 0;
+}
+.testimonial-upper-strip{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+}
+.testimonial-upper-strip h3{
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      color: rgb(50, 50, 50);
+      margin-bottom: 10px;
+}
+.testimonial-upper-strip h2{
+     font-size: 45px;
+}
+
+.testimonial-upper-strip .right-column{
+     padding: 30px;
+}
+.testimonial-upper-strip .link-wrap a{
+      width: 180px;
+      height: 45px;
+}
+
+
+.testimonials-body{
+     margin-top: 40px;
+}
+.testimonial-moja p{
+     font-size: 20px;
+     font-weight: 350;
+     line-height: 1.5;
+     margin-bottom: 20px;
+     color: rgb(50, 50, 50);
+}
+
+.testimonial-moja p span{
+      color: var(--secondary-color);
+      font-size: 22px;
+      margin: 0px 5px;
+}
+
+.testimonial-moja h4{
+     font-size: 20px;
+     font-weight: 500;
+     margin-bottom: 10px;
+}
+.testimonial-moja h5{
+      font-weight: 400;
+      color: rgb(117, 117, 117);;
+}
+
+.partners-strip{
+       margin-top: 90px;
+}
+.partners-strip .header-strip{
+       display: flex;
+       gap: 30px;
+       align-items: center;
+}
+.header-strip span:nth-child(1){
+       width: 250px;
+       height: 45px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border: 2px solid;
+       font-size: 15px;
+}
+.header-strip span:nth-child(2){
+       width: 100%;
+       height: 0.5px;
+       background: rgba(228, 228, 228, 0.866);
+}
+
+
+.partner-logos{
+     display: flex;
+     gap: 30px;
+     margin-top: 40px;
+     align-items: center;
+     flex-wrap: wrap;
+}
+.partner-logos img{
+     width: 180px;
+     object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 1300px){
       .about-section-content .middle-part{

@@ -5,6 +5,7 @@ import "../styles/home.css"
 import AboutExtraSection from "../components/home/AboutExtraSection"
 import ServicesSection from "../components/home/ServicesSection"
 import PortfolioSection from "../components/home/PortfolioSection"
+import Testimonials from "../components/home/Testimonials"
 const Home = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Home = () => {
            <AboutExtraSection />
            <ServicesSection />
            <PortfolioSection />
+           <Testimonials />
     </>
   )
 }

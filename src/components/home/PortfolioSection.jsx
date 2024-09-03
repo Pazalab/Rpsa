@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
+import { portfolio } from "../../data/portfolio";
 const PortfolioSection = () => {
   return (
     <div className="portfolio-section">
@@ -16,12 +17,21 @@ const PortfolioSection = () => {
                                                                                  <span className="right-border"></span>
                                                                                  <span className="bottom-border"></span>
                                                                                  <span className="left-border"></span>
-                                                                        Know more<span className="icon"><HiMiniArrowLongRight  /></span></Link>
+                                                                        View all Work<span className="icon"><HiMiniArrowLongRight  /></span></Link>
                                                                   </div>
                                                 </div>
                                       </div>
                                       <div className="portfolio-projects-row">
-
+                                                { portfolio.map(pt => 
+                                                      <div className="portfolio-project-moja" key={pt.id}>
+                                                              <img src={pt.image} alt="" />
+                                                              <div className="pt-texts">
+                                                                         <h3>{pt.name}</h3>
+                                                                         
+                                                                         <Link to={pt.link}>Explore Category <span><HiMiniArrowLongRight /></span></Link>
+                                                              </div>
+                                                     </div>
+                                                )}
                                       </div>
                           </div>
                </div>

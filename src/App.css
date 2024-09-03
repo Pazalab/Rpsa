@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 *{
     margin: 0;
@@ -9,8 +9,8 @@
 :root{
    --main-color: #097ef3;
    --secondary-color: #ffc400;
-   --regular-font: "Onest", sans-serif;
-   --bold-font: "Urbanist", sans-serif;
+   --regular-font: "Outfit", sans-serif;
+   --bold-font:"Plus Jakarta Sans",  sans-serif;
 }
 
 body{
@@ -25,6 +25,7 @@ ul{
 a{
      text-decoration: none;
 }
+
 
 input,
 textarea,
