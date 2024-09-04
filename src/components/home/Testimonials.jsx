@@ -28,7 +28,7 @@ const Testimonials = () => {
                                                                                  <span className="bottom-border"></span>
                                                                                  <span className="left-border"></span>
                                                                         Get a Quote<span className="icon"><FiChevronRight /></span></Link>
-                                                                  </div>
+                                                            </div>
                                                   </div>
                                       </div>
 

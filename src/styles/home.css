@@ -341,7 +341,8 @@
 }
 .number-moja h4{
      font-size: 20px;
-     font-weight: 500;
+     font-weight: 450;
+     color: rgb(50, 50, 50);
 }
 
 .services-section{
@@ -416,8 +417,14 @@
 }
 
 .portfolio-intro-content h4{
-     font-size: 20px;
+     font-size: 16px;
      font-weight: 300;
+     border: 2px solid whitesmoke;
+     display: inline-flex;
+     width: 180px;
+     height: 45px;
+     justify-content: center;
+     align-items: center;
 }
 .portfolio-intro-content h2{
      font-size: 30px;
@@ -429,14 +436,22 @@
 .portfolio-intro-content .link-wrap{
      margin-top: 30px;
 }
-.portfolio-intro-content .link-wrap a{
+.portfolio-intro-content .link-wrap a,
+.footer-call-to-action .link-wrap a{
      color: gainsboro;
+}
+.footer-call-to-action .link-wrap a:hover,
+.portfolio-intro-content .link-wrap a:hover{
+      color: var(--main-color);
 }
 .portfolio-intro-content .link-wrap a span.top-border,
 .portfolio-intro-content .link-wrap a span.right-border,
 .portfolio-intro-content .link-wrap a span.bottom-border,
-.portfolio-intro-content .link-wrap a span.left-border
-{
+.portfolio-intro-content .link-wrap a span.left-border,
+.footer-call-to-action .link-wrap a span.top-border,
+.footer-call-to-action .link-wrap a span.right-border,
+.footer-call-to-action .link-wrap a span.bottom-border,
+.footer-call-to-action .link-wrap a span.left-border{
       background-color: gainsboro;
 }
 
@@ -542,6 +557,7 @@
 }
 .testimonial-upper-strip h2{
      font-size: 45px;
+     line-height: 1.4;
 }
 
 .testimonial-upper-strip .right-column{
@@ -610,6 +626,7 @@
      margin-top: 40px;
      align-items: center;
      flex-wrap: wrap;
+     justify-content: center;
 }
 .partner-logos img{
      width: 180px;
@@ -617,17 +634,85 @@
 }
 
 
+.blog-section{
+      padding: 100px 0;
+      background: white;
+}
+.blog-intro{
+     display: flex; 
+     justify-content: space-between;
+     gap: 20px;
+     align-items: center;
+}
 
 
+.blog-intro h4{
+      font-size: 18px;
+      font-family: var(--regular-font);
+      font-weight: 400;
+      border: 2px solid;
+      width: 150px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 20px;
+}
+.blog-intro h2{
+     font-size: 45px;
+     font-weight: 600;
+}
 
 
+.blog-section-row{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 40px;
+     margin-top: 50px;
+}
+.blog-article-moja{
+      cursor: pointer;
+}
+.blog-article-moja .blog-image{
+     height: 320px;
+     overflow: hidden;
+}
+.blog-article-moja img{
+      max-height: 320px;
+      display: block;
+      transition: all 0.75s ease;
+      -webkit-transition: all 0.75s ease;
+      -moz-transition: all 0.75s ease;
+      -ms-transition: all 0.75s ease;
+      -o-transition: all 0.75s ease;
+}
+.blog-article-moja:hover img{
+     transform: scale(1.08);
+     -webkit-transform: scale(1.08);
+     -moz-transform: scale(1.08);
+     -ms-transform: scale(1.08);
+     -o-transform: scale(1.08);
+}
 
-
-
-
-
-
-
+.blog-article-moja h4{
+     margin: 20px 0 5px 0px;
+     text-transform: uppercase;
+     font-weight: 600;
+     color: rgb(78, 78, 78);
+     font-size: 16px;
+}
+.blog-article-moja h3{
+     font-size: 25px;
+     transition: all 0.75s ease;
+     line-height: 1.35;
+     -webkit-transition: all 0.75s ease;
+     -moz-transition: all 0.75s ease;
+     -ms-transition: all 0.75s ease;
+     -o-transition: all 0.75s ease;
+}
+.blog-article-moja:hover h3{
+     color: var(--main-color);
+}
 
 
 
@@ -692,9 +777,23 @@
      .about-extra-section-content h3{
            text-align: center;
      }
-     .about-extra-section .numbers-row{
+     .about-extra-section .numbers-row,
+     .services-body-row{
            grid-template-columns: 1fr 1fr;
      }
+     .services-intro{
+            width: 100%;
+     }
+     .services-intro h2{
+          width: 100%;
+     }
+     .portfolio-section-content{
+             gap: 40px;
+     }
+     .portfolio-intro-content h2{
+          font-size: 26px;
+     }
+
 }
 
 @media(max-width: 768px){
@@ -708,6 +807,35 @@
       .about-section-content{
            padding: 150px 0;
       }
+      .services-intro h2{
+          font-size: 65px;
+      }
+      .services-intro-texts,
+      .testimonial-upper-strip,
+      .blog-intro{
+          flex-direction: column;
+          gap: 20px;
+          align-items: flex-start;
+      }
+      .services-body-row,
+      .portfolio-section-content,
+      .blog-section-row{
+            grid-template-columns: 1fr;
+      }
+      .portfolio-intro-content{
+            position: relative;
+            top: auto;
+      }
+      .portfolio-intro-content h2{
+             font-size: 25px;
+      }
+      .testimonial-upper-strip .right-column{
+          padding: 0px;
+     }
+     .copyright{
+             gap: 10px;
+             flex-wrap: wrap;;
+     }
 }
 
 @media(max-width: 530px){
@@ -718,7 +846,9 @@
           gap: 50px;
     }
       .hero-slide-texts h1,
-      .about-section-content h2{
+      .about-section-content h2,
+      .services-intro h2,
+      .testimonial-upper-strip h2,.blog-intro h2{
             font-size: 40px;
       }
       .about-section-content{
@@ -731,17 +861,69 @@
       .middle-part h2{
            font-size: 25px;
       }
-      .hero-slide-texts p{
+      .hero-slide-texts p,
+      .testimonial-moja p{
            font-size: 18px;
            width: 100%;
       }
       .about-extra-section .numbers-row{
               grid-template-columns: 1fr;
       }
-      .about-extra-section-content h3{
+      .about-extra-section-content h3,
+      .pt-texts h3{
              font-size: 22px;
       }
       .number-moja h2{
-             font-size: 60px;
+             font-size: 50px;
       }
+      .number-moja h4,
+      .blog-intro h4{
+             font-size: 16px;
+      }
+      .blog-article-moja h4{
+          font-size: 15px;
+      }
+      .header-strip span:nth-child(1){
+             width: 80%;
+             margin: auto;
+      }
+     
+      .header-strip span:nth-child(2){
+             display: none;
+      }
+      .blog-intro,
+      .testimonial-upper-strip{
+              align-items: center;
+              text-align: center;
+      }
+      .blog-intro h4{
+             margin: 0px auto 10px auto;
+      }
+      .blog-intro .link-wrap a{
+             width: 160px;
+             height: 45px;
+      }
+      .services-intro h2{
+             width: 100%;
+             text-align: center;
+      }
+      .services-section{
+              padding: 0px 0px 100px 0px;
+      }
+      .about-extra-section-content p{
+             text-align: center;
+             font-size: 18px;
+      }
+}
+
+@media(max-width: 380px){
+        .blog-article-moja h3{
+               font-size: 20px;
+        }
+        .about-extra-section-content p span{
+               font-size: 20px;
+        }
+        .pt-texts h3{
+              font-size: 17px;
+        }
 }
