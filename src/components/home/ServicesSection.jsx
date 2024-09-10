@@ -31,7 +31,7 @@ const ServicesSection = () => {
                                                               <p>{service.elaboration}</p>
 
                                                               <div className="link-wrap">
-                                                                           <Link to={"/"}>
+                                                                           <Link to={"/services"}>
                                                                                  <span className="top-border"></span>
                                                                                  <span className="right-border"></span>
                                                                                  <span className="bottom-border"></span>

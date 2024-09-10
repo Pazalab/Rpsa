@@ -9,7 +9,7 @@ const AboutExtraSection = () => {
                                    <p><span>Renaissance per Salut Architects </span>is a Kenyan architectural firm committed to excellence in Africa’s building industry. With 30+ years of combined experience, we deliver sustainable, cost-effective designs across residential, healthcare, commercial, and hospitality sectors. Our projects emphasize environmentally conscious solutions, using renewable energy, efficient systems, natural ventilation, and locally sourced materials to maximize value and comfort.</p>
                                     
                                  <div className="link-wrap">
-                                          <Link to={"/"}>
+                                          <Link to={"/about-us"}>
                                                 <span className="top-border"></span>
                                                 <span className="right-border"></span>
                                                 <span className="bottom-border"></span>
