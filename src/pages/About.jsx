@@ -10,7 +10,7 @@ const About = () => {
                      <div className="hero-landing-content">
                                 <div className="inner-row">
                                                  <div className="hero-landing-texts">
-                                                        <h1>We craft innovative designs, redefines spaces, modern living elegantly.</h1>
+                                                        <h1>We craft innovative designs that redefine spaces and elevate modern living.</h1>
                                                  </div>
                                 </div>
                      </div>
