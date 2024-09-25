@@ -1,5 +1,9 @@
 import AboutBackground from "../components/about/AboutBackground"
+import ProcessSection from "../components/about/ProcessSection"
+import TeamSection from "../components/about/TeamSection"
+import Footer from "../components/common/Footer"
 import Navbar from "../components/common/navigation/Navbar"
+import Testimonials from "../components/home/Testimonials"
 import "../styles/about.css"
 
 const About = () => {
@@ -16,6 +20,10 @@ const About = () => {
                      </div>
            </div>
            <AboutBackground />
+           <ProcessSection />
+           <TeamSection />
+           <Testimonials />
+           <Footer />
     </>
   )
 }

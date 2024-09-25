@@ -35,8 +35,9 @@
        border: 2px solid black;
        display: inline-flex;
        padding: 12px 30px;
-       font-size: 16px;
+       font-size: 15px;
        font-weight: 500;
+       text-transform: uppercase;
        margin-bottom: 20px;
 }
 
@@ -113,32 +114,134 @@
       color: rgb(50, 50, 50);
 }
 
+.process-section{
+       padding: 100px 0;
+       background: #111;
+       overflow-x: hidden;
+}
+
+.process-section-content .intro{
+      width: 600px;
+      margin: auto;
+      text-align: center;
+}
+
+.process-section-content .intro h2{
+      font-size: 55px;
+      color: whitesmoke;
+      line-height: 1.5;
+      font-weight: 600;
+}
+
+.process-section-row{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+}
+
+.process-moja{
+      color: whitesmoke;
+      position: relative;
+}
+
+.process-moja figure{
+      margin: 20px 0;
+      font-weight: 200;
+      color: var(--secondary-color);
+}
+.process-moja::before{
+      width: 110%;
+      height: 0.5px;
+      background: rgba(220, 220, 220, 0.3);
+      content: "";
+      position: absolute;
+      top: 65px;
+      left: 5px
+}
+.process-moja .dot{
+       width: 8px;
+       height: 8px;
+       background: whitesmoke;
+       border-radius: 8px;
+       -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+       -ms-border-radius: 8px;
+       -o-border-radius: 8px;
+       display: flex;
+       margin-bottom: 10px;
+}
+.process-moja h3{
+       line-height: 1.5;
+       font-weight: 500;
+       margin-bottom: 10px;
+}
 
 
+.process-moja p{
+      font-weight: 250;
+      line-height: 1.5;
+}
 
+.team-section{
+       padding: 100px 0;
+}
 
+.team-section-content{
+      display: grid;
+      grid-template-columns: 1.25fr 2.5fr;
+      gap: 50px;
+}
 
+.team-section-content .intro h3{
+      border: 2px solid black;
+      display: inline-flex;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+}
+.team-section-content .intro p{
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5;
+}
 
+.team-members{
+      margin-top: 60px;;
+}
+.team-section-column.grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      height: max-content;
+}
 
+.team-moja{
+      height: max-content;
+}
+.team-moja .profile-texts{
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+}
 
+.team-moja h4{
+         font-size: 22px;
+         font-family: var(--font-bold);
+         font-weight: 500;
+}
+.team-section-column.grid .team-moja:nth-child(even),
+.team-members .team-moja:nth-child(even){
+      margin-top: 30%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.team-moja img{
+      min-height: 450px;
+}
 
 
 
@@ -168,23 +271,59 @@
              width: 100%;
        }
        .about-background-split,
-       .about-statements-row{
+       .about-statements-row,
+       .team-section-content{
             grid-template-columns: 1fr;
             gap: 40px;
+       }
+       .process-section-row{
+             grid-template-columns: 1fr 1fr;
+       }
+       .process-moja::before{
+             width: 105%;
+       }
+       .team-members{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px
        }
 }
 
 @media(max-width: 768px){
-      .hero-landing-texts h1{
+      .hero-landing-texts h1,
+      .process-section-content .intro h2{
              font-size: 50px;
       }
       .about-background-image  img:nth-child(1){
             max-width: 60%;;
       }
+      .process-section-content .intro{
+            width: 100%;
+      }
+      .process-section-row{
+               grid-template-columns: 1fr;
+      }
+      .process-moja::before{
+            width: 95%;
+      }
+      .team-moja .profile-texts{
+             flex-direction: column;
+      }
 }
-
+@media(max-width: 560px){
+       .team-section-column.grid,
+       .team-members{
+              grid-template-columns: 1fr;
+              gap: 30px;
+       }
+       .team-section-column.grid .team-moja:nth-child(even),
+      .team-members .team-moja:nth-child(even){
+          margin-top: 0;
+}
+}
 @media(max-width: 480px){
-      .hero-landing-texts h1{
+      .hero-landing-texts h1,
+      .process-section-content .intro h2{
            font-size: 40px;
       }
 }
