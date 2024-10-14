@@ -13,7 +13,7 @@ const ServicesSection = () => {
                                                          <p>At Renaissance Per Salut, quality is our priority—we employ skilled professionals, adhere to industry best practices, and use premium materials to deliver a wide range of tailored services that meet our clients&apos; unique needs, ensuring excellence from initial planning to final touches in every project.</p>
 
                                                          <div className="link-wrap">
-                                                                  <Link to={"/"}>
+                                                                  <Link to={"/services"}>
                                                                         <span className="top-border"></span>
                                                                         <span className="right-border"></span>
                                                                         <span className="bottom-border"></span>
@@ -24,14 +24,14 @@ const ServicesSection = () => {
                                    </div>
 
                                    <div className="services-body-row">
-                                            { services.map(service => 
+                                            { services.slice(0,6).map(service => 
                                                    <div className="service-moja" key={service.id}>
                                                               <img src={service.image} alt="" />
                                                               <h3>{service.title}</h3>
                                                               <p>{service.elaboration}</p>
 
                                                               <div className="link-wrap">
-                                                                           <Link to={"/services"}>
+                                                                           <Link to={service.link}>
                                                                                  <span className="top-border"></span>
                                                                                  <span className="right-border"></span>
                                                                                  <span className="bottom-border"></span>
