@@ -12,7 +12,7 @@ const PortfolioSection = () => {
                                                              <h2>We make buildings and places that matter. Working across a breadth of portfolios, we design by sharing ideas, testing limits, and meeting new challenges.</h2>
 
                                                              <div className="link-wrap">
-                                                                           <Link to={"/our-work"}>
+                                                                           <Link to={"/work"}>
                                                                                  <span className="top-border"></span>
                                                                                  <span className="right-border"></span>
                                                                                  <span className="bottom-border"></span>
@@ -28,7 +28,7 @@ const PortfolioSection = () => {
                                                               <div className="pt-texts">
                                                                          <h3>{pt.name}</h3>
                                                                          
-                                                                         <Link to={pt.link}>Explore Category <span><HiMiniArrowLongRight /></span></Link>
+                                                                         <Link to={"/"}>Explore Category <span><HiMiniArrowLongRight /></span></Link>
                                                               </div>
                                                      </div>
                                                 )}

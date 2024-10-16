@@ -22,7 +22,7 @@ const Testimonials = () => {
                                                   </div>
                                                   <div className="right-column">
                                                              <div className="link-wrap">
-                                                                           <Link to={"/"}>
+                                                                           <Link to={"/contact-us"}>
                                                                                  <span className="top-border"></span>
                                                                                  <span className="right-border"></span>
                                                                                  <span className="bottom-border"></span>

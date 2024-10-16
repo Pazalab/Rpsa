@@ -33,7 +33,6 @@ const HeroSection = () => {
   const [ swiperRef, setSwiperRef ] = useState(null);
   const [swiperIndex, setSwiperIndex] = useState(0)
 
-  console.log(swiperRef)
   return (
     <div className="hero-section">
               <div className="hero-slider">

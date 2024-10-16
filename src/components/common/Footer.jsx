@@ -12,7 +12,7 @@ const Footer = () => {
                        <div className="footer-call-to-action">
                                  <h3>Looking to transform your vision into reality with innovative architectural designs?</h3>
                                  <div className="link-wrap">
-                                          <Link to={"/"}>
+                                          <Link to={"/contact-us"}>
                                                 <span className="top-border"></span>
                                                 <span className="right-border"></span>
                                                 <span className="bottom-border"></span>
@@ -52,11 +52,11 @@ const Footer = () => {
                                            <div className="footer-sub-grid">
                                                         <h3 className="footer-title">Pages</h3>
                                                         <ul>
-                                                                 <li><Link to={"/"}>About Us</Link></li>
-                                                                 <li><Link to={"/"}>Our Work</Link></li>
-                                                                 <li><Link to={"/"}>Services</Link></li>
+                                                                 <li><Link to={"/about-us"}>About Us</Link></li>
+                                                                 <li><Link to={"/work"}>Our Work</Link></li>
+                                                                 <li><Link to={"/services"}>Services</Link></li>
                                                                  <li><Link to={"/"}>Articles</Link></li>
-                                                                 <li><Link to={"/"}>Contact Us</Link></li>
+                                                                 <li><Link to={"/contact-us"}>Contact Us</Link></li>
                                                         </ul>
                                            </div>
                                    </div>

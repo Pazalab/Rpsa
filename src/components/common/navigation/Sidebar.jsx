@@ -94,7 +94,7 @@ const Sidebar = () => {
                                                                 <li><NavLink to={"/about-us"}>About Us<span><LuMoveRight /></span></NavLink></li>
                                                                 <li><NavLink to={"/services"}>Services<span><LuMoveRight /></span></NavLink></li>
                                                                 <li><NavLink to={"/work"}>Work <span><LuMoveRight /></span></NavLink></li>
-                                                                <li><NavLink to={"/articles"}>Articles <span><LuMoveRight /></span></NavLink></li>
+                                                                {/* <li><NavLink to={"/"}>Articles <span><LuMoveRight /></span></NavLink></li> */}
                                                                 <li><NavLink to={"/contact-us"}>Contact Us <span><LuMoveRight /></span></NavLink></li>
                                                         </ul>
                                               </div>

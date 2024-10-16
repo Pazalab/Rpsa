@@ -13,7 +13,7 @@ const BlogSection = () => {
                                                               <h2>Latest Articles</h2>
                                                 </div>
                                                 <div className="link-wrap">
-                                                        <Link to={"/articles-and-insights"}>
+                                                        <Link to={"/"}>
                                                                  <span className="top-border"></span>
                                                                  <span className="right-border"></span>
                                                                  <span className="bottom-border"></span>
