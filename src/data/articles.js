@@ -7,7 +7,7 @@ export const articles = [
           category: "Home Improvement"
     },
     {
-        id: 0,
+        id: 1,
         image: "/blog2.jpg",
         title: "The Future of Eco-Friendly Building Practices",
         link: "/article/the-future-of-eco-friendly-building-practices",

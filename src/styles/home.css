@@ -746,6 +746,7 @@
      }
      .hero-slide-inner-wrap{
            width: 100%;
+           gap: 20px
      }
      .about-section{
           height: auto;
@@ -799,7 +800,7 @@
 @media(max-width: 768px){
       .hero-slide-texts h1,
       .about-section-content h2{
-           font-size: 60px;
+           font-size: 50px;
       }
       .middle-part h2{
            font-size: 35px;
@@ -843,7 +844,7 @@
            text-align: center;
     }
     .hero-slide-inner-wrap{
-          gap: 50px;
+          gap: 10px;
     }
       .hero-slide-texts h1,
       .about-section-content h2,

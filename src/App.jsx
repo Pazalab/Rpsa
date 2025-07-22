@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import SingleService from './pages/SingleService'
 import Portfolio from './pages/Portfolio'
 import { useEffect } from 'react'
+import SingleProject from './pages/SingleProject'
 
 function App() {
   const location = useLocation();
@@ -22,7 +23,8 @@ function App() {
              <Route path="/services" element={<Services />} />
              <Route path="/contact-us" element={<Contact />} />
              <Route path="/service/:name" element={<SingleService />} />
-             <Route path='/work' element={<Portfolio /> } />
+             <Route path='/projects' element={<Portfolio /> } />
+             <Route path='/projects/view/:name' element={<SingleProject />} />
     </Routes>
   )
 }
