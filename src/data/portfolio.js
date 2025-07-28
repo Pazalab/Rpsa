@@ -1,7 +1,7 @@
 export const portfolio = [
     {
         id: 0,
-        image: "/work/kirinyaga/1.jpg",
+        image: "/work/kirinyaga/kilele/9.jpg",
         name: "Institutional",
         link: "/projects?type=Institutional"
     },
@@ -43,15 +43,22 @@ export const projects = [
          url_param: "kilele-tuition-block-kirinyaga-university",
          intro: "The Kilele Tuition Block stands as a flagship academic facility at Kirinyaga University, reflecting a modern architectural approach to educational infrastructure. Designed to accommodate large volumes of students and academic activities, the structure emphasizes both functional effeciency and aesthetic impact.", 
          description: ["Anchored by a a bold central dome, the building serves as a visual and symbolic centerpiece within the campus. The dome crowns a vertical circulation core flanked by two symmetrical academic wings, reinforcing a balanced spatial organization. The extensive use of curtain wall glazing enhances natural daylighting and fosters visual connectivity between interior and exterior spaces.", "The building houses multiple lecture halls, tutorial rooms, academic offices, and support spaces. Spatial layouts are designed for flexibility, acoustical control, and optimal student engagement.", "Set within an expansive landscaped lawn, the tuition block integrates seamlessly into the university’s masterplan, promoting walkability, visual openness, and green-space interaction."],
-         main_image: "/work/kirinyaga/1.jpg",
+         main_image: "/work/kirinyaga/kilele/9.jpg",
          gallery: [
-             "/work/kirinyaga/2.jpg",
-             "/work/kirinyaga/3.jpg",
-             "/work/kirinyaga/4.jpg",
-             "/work/kirinyaga/5.jpg",
-             "/work/kirinyaga/6.jpg",
-             "/work/kirinyaga/7.jpg",
-             "/work/kirinyaga/8.jpg",
+             "/work/kirinyaga/kilele/2.jpg",
+             "/work/kirinyaga/kilele/3.jpg",
+             "/work/kirinyaga/kilele/4.jpg",
+             "/work/kirinyaga/kilele/5.jpg",
+             "/work/kirinyaga/kilele/6.jpg",
+             "/work/kirinyaga/kilele/7.jpg",
+             "/work/kirinyaga/kilele/8.jpg",
+             "/work/kirinyaga/kilele/1.jpg",
+             "/work/kirinyaga/kilele/10.jpg",
+             "/work/kirinyaga/kilele/11.jpg",
+             "/work/kirinyaga/kilele/12.jpg",
+             "/work/kirinyaga/kilele/14.jpg",
+              "/work/kirinyaga/kilele/15.jpg",
+             "/work/kirinyaga/kilele/16.jpg",
          ]
     },
     {
@@ -97,6 +104,24 @@ export const projects = [
             "/work/juja-hospital/10.jpg",
         ]
     }, 
+        {
+         id: 785,
+         title: "Kirinyaga University Dining Hall – Institutional Cafeteria",
+         category: "Institutional",
+         status: "Completed",
+         client: "Kirinyaga University",
+         project_year: "2019",
+         link: "/projects/view/kirinyaga-university-dining-hall-institutional-cafeteria",
+         url_param: "kirinyaga-university-dining-hall-institutional-cafeteria",
+         intro: "Kirinyaga Dining Hall stands as a bold and purposeful structure, designed to accommodate large groups efficiently while maintaining a warm, communal atmosphere. The architectural concept is centered on durability, light, and accessibility, delivering a space that supports not just nourishment, but daily interaction and comfort.", 
+         description: ["With its distinct blend of natural stone cladding and expansive vertical windows, the building makes a strong statement while remaining grounded in its environment. The combination of traditional and modern design elements results in a cafeteria hall that is both functional and visually uplifting.", "Kirinyaga Dining Hall is more than a food service facility—it is a social anchor point, designed to serve a wide demographic daily with dignity and comfort. The architectural clarity and thoughtful layout reflect the institution’s commitment to quality, resilience, and user experience.", "Its clean geometry, emphasis on daylight, and use of regional materials make it a timeless asset in institutional design—a space that welcomes, connects, and nourishes in every sense."],
+         main_image: "/work/kirinyaga/dining/1.jpg",
+         gallery: [
+             "/work/kirinyaga/dining/2.jpg",
+             "/work/kirinyaga/dining/3.jpg",
+             "/work/kirinyaga/dining/4.jpg"
+         ]
+    },
     {
         id: 3,
         title: "Pearls & Psalms Hospital, Kakamega",
