@@ -2,7 +2,7 @@ export const faqs = [
     {
          id: 0,
          question: "What types of construction projects do you handle?",
-         answer: "Renaissance Per Salut specializes in residential, commercial, and industrial construction projects. From new builds to renovations and remodels, we have the expertise to handle projects of all sizes and scopes."
+         answer: "Renaissance Per Salut specializes in residential, commercial, health and industrial construction projects. From new builds to renovations and remodels, we have the expertise to handle projects of all sizes and scopes."
     },
     {
         id: 1,

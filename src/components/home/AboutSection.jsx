@@ -76,7 +76,8 @@ const AboutSection = () => {
                                    <h2 className="left">Build Spaces</h2>
                                    <div className="middle-media">
                                                <video autoPlay loop muted>
-                                                             <source src="https://res.cloudinary.com/dq6subhaj/video/upload/v1724697528/jwzgnt2xyyzxwkvrxucu.mp4" type="video/mp4" />
+                                                             {/* <source src="https://res.cloudinary.com/dq6subhaj/video/upload/v1724697528/jwzgnt2xyyzxwkvrxucu.mp4" type="video/mp4" /> */}
+                                                             <source src="https://files.pazalab.com/rpsa/videos/skyline.mp4" type="video/mp4" />
                                                    </video>
                                    </div>
                                    <h2 className="right">That Inspire</h2>

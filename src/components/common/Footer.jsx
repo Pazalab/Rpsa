@@ -47,7 +47,7 @@ const Footer = () => {
 
                                                       <h3 className="footer-title">Looking for expedited assistance?</h3>
                                                       <h2>hello@rpsa.co.ke</h2>
-                                                      <h2>+254 721286228</h2>
+                                                      <h2>+254 727 516 222</h2>
                                            </div>
                                            <div className="footer-sub-grid">
                                                         <h3 className="footer-title">Pages</h3>
@@ -55,7 +55,7 @@ const Footer = () => {
                                                                  <li><Link to={"/about-us"}>About Us</Link></li>
                                                                  <li><Link to={"/work"}>Our Work</Link></li>
                                                                  <li><Link to={"/services"}>Services</Link></li>
-                                                                 <li><Link to={"/"}>Articles</Link></li>
+                                                                 {/* <li><Link to={"/"}>Articles</Link></li> */}
                                                                  <li><Link to={"/contact-us"}>Contact Us</Link></li>
                                                         </ul>
                                            </div>

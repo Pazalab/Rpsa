@@ -18,7 +18,7 @@ const Faqs = () => {
                                                           <h4>You have different questions?</h4>
                                                           <p>Our team will answer all your questions, we ensure a quick response.</p>
 
-                                                          <h5><span>Call us:</span> +254 721 286 228</h5>
+                                                          <h5><span>Call us:</span> +254 735 975 898</h5>
                                                 </div>
                                        </div>
                                        <div className="faq-section-column">
