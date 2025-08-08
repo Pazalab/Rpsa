@@ -2,49 +2,49 @@ export const team = [
     {
         id: 0,
         name: "Robinson Manguro",
-        position: "Founder & Director",
-        image: "/dum1.jpg",
+        position: "Director",
+        image: "/team/robinson.jpg",
     },
     {
         id: 2,
-        name: "Denis Mbugua",
-        position: "Architect",
-        image: "/dum2.jpg"
+        name: "Rebecca Barry",
+        position: "Intern Architect",
+        image: "/team/rebecca.jpg"
     },
     {
         id: 3,
         name: "Kelvin Ngei",
-        position: "Graduate Architect",
-        image: "/dum4.jpg"
+        position: "Architect",
+        image: "/team/kelvin.jpg"
     },
     {
         id: 4,
-        name: "Frank Chumo",
-        position: "Site Supervision Manager",
-        image: "/dum5.png"
+        name: "Truphena Manguro",
+        position: "Project Manager",
+        image: "/team/truphena.jpg"
     },
     {
         id: 5,
-        name: "Godfred Achieng",
-        position: "Architectural Technician",
-        image: "/dum6.png"
+        name: "Joseph Oburu",
+        position: "Intern Architect",
+        image: "/team/oburu.jpg"
     },
     {
         id: 6,
-        name: "Truphena Manguro",
-        position: "Admin Assistant",
-        image: "/dum3.jpg"
+        name: "Rooney Onyancha",
+        position: "Intern Architect",
+        image: "/team/rooney.jpg"
     },
     {
         id: 7,
-        name: "Gregory Ng'etich",
-        position: "Draughtsman",
-         image: "/dum7.jpg"
+        name: "Joseph Kennedy Nyabuta",
+        position: "Intern Architect",
+         image: "/team/joseph.jpg"
     },
-    {
-        id: 8,
-        name: "Harun Shisia",
-        position: "Project Manager",
-        image: "/dum8.jpg"
-    }
+    // {
+    //     id: 8,
+    //     name: "Harun Shisia",
+    //     position: "Project Manager",
+    //     image: "/dum8.jpg"
+    // }
 ]
