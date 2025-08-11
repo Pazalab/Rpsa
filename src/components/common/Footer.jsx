@@ -33,10 +33,10 @@ const Footer = () => {
 
                                              <div className="footer-social-links">
                                                         <ul> 
-                                                                <li><Link to={"/"}><span><FaFacebookF /></span></Link></li>
-                                                                <li><Link to={"/"}><span><FaInstagram /></span></Link></li>
-                                                                <li><Link to={"/"}><span><FaXTwitter /></span></Link></li>
-                                                                <li><Link to={"/"}><span><FaLinkedinIn /></span></Link></li>
+                                                                <li><Link to={"https://web.facebook.com/p/Renaissance-per-Salut-Architects-100069907103150/"} target="_blank"><span><FaFacebookF /></span></Link></li>
+                                                                <li><Link to={"https://www.instagram.com/renaissancepsarchitects/"} target="_blank"><span><FaInstagram /></span></Link></li>
+                                                                <li><Link target="_blank" to={"https://x.com/Rpsa_Architects"}><span><FaXTwitter /></span></Link></li>
+                                                                <li><Link target="_blank" to={"https://www.linkedin.com/in/renaissance-per-salut-architects-5a74a22a4/"}><span><FaLinkedinIn /></span></Link></li>
                                                         </ul>
                                              </div>
                                    </div>
